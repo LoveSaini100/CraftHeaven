@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: rgb(222, 222, 222);
+    position: fixed;
+}
+
+.navbar-brand{
+    font-size: 2.4rem !important;
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-brand:hover{
+    color: black;
+}
+
+.nav-link{
+    margin-left: 30px;
+    color: black !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.nav-link:hover{
+    color: black;
+    scale: 1.1;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+}
+
+#signup-form {
+    position: absolute; 
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+}
+
+#signup-form .btn-primary {
+    display: block;
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+  
+#signup-form.show {
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-body{
+    box-shadow: 0 0 50px rgba(2, 2, 2, 0.689);
+    border: 1px solid #ddd;
+}
+
+.wrapper{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.empty{
+    height: 100vh;
+    width: 100%;
+}
+
+#carouselExample{
+    margin-top: 80px;
+    height: 60vh;
+}
+
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+.carousel-caption p{
+    font-size: 40px;
+    background-color: rgba(62, 60, 60, 0.241);
+}
+
+.carousel-caption .btn-primary{
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        background-color: rgba(62, 60, 60, 0.241); 
+    }
+    .carousel-caption p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .carousel-caption .btn-primary {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+.centered-heading {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: 100%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 2rem;
+    text-align: center; 
+}
+
+/* for animation of images */
+.image-container {
+    overflow: hidden; 
+    position: relative; 
+}
+
+.image-container img {
+    transition: transform 0.3s ease; 
+    display: block;
+    width: 100%; 
+}
+
+.image-container:hover img {
+    transform: translateY(-10px); 
+}
+
+.wrapper {
+    position: relative; 
+    background: url('pictures/bridge.jpeg') no-repeat center center; 
+    background-size: cover;
+    overflow: hidden; 
+}
+
+.wrapper::before {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background-color: rgba(131, 80, 204, 0.5);
+    z-index: 1; 
+}
+
+.wrapper > * {
+    position: relative; 
+    z-index: 2; 
+}
+
+.wrapper h2{
+    color: white;
+    font-weight: 700;
+}
+
+.footer{
+    background-color: rgb(33, 5, 63);
+    color: white;
+}
+
+.footer .footer-list li{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+
+
+/* ==============Scenery page============= */
+.hero-section h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: rgb(124, 15, 134);
+    background-color: #ddd;
+
+}
+.hero-section p{
+    font-weight: 400;
+}
