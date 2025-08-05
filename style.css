@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: rgb(222, 222, 222);
+    position: fixed;
+    
+}
+
+.navbar-brand{
+    color: black;
+    font-family: 'Lobster', cursive;
+    left: 0 !important;
+    margin-left: 30px;
+}
+
+.navbar-brand:hover{
+    color: black;
+}
+.navbar .container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 10px;  
+    padding-right: 10px;
+
+  }
+
+.nav-link{
+    margin-left: 30px;
+    color: black !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .85rem;
+}
+.nav-link:hover{
+    color: white !important;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    
+}
+.bg-gray-300{
+    background-color: #d1d5db;
+}
+.bg-gray-200{
+    background-color: #e5e7eb;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+}
+
+/* ==================Signup Form================== */
+
+#signup-form {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    z-index: 1;
+    /* border: 2px solid violet; */
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .signup-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .signup-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+
+#signup-form .btn-primary {
+    display: block;
+    /* margin: 20px auto; */
+    font-size: 1.2rem;
+}
+  
+#signup-form.show {
+    display: block;
+    padding: 20px;
+   
+}
+
+#signup-form .close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 1000;
+}
+
+#signup-form .btn-close {
+    font-size: 1.2rem;
+    padding: 0.25rem 0.5rem;
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+}
+.signup-image {
+    max-width: 100%;
+    position: relative;
+}
+  
+.signup-image img {
+    border-radius: 0 10px 10px 0;
+    object-fit: cover;
+    height: 100%;
+}
+  
+.quote-overlay {
+    background: rgba(0, 0, 0, .7);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+.blur {
+    filter: blur(8px);
+    pointer-events: none;
+    transition: filter 0.3s ease;
+}
+
+/* after */
+  
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 9998;
+  }
+  
+  .modal-active {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+
+
+
+  /* Responsive: Tablet and Mobile */
+  @media (max-width: 768px) {
+    .signup-wrapper {
+      flex-direction: column; 
+      align-items: center;
+    }
+
+    .quote-overlay {
+        display: none;
+    }
+  
+    .signup-image img {
+      display: none;
+    }
+  
+    #signup-form {
+      width: 95vw;
+      max-height: 95vh;
+      overflow-y: auto;
+      padding: 10px;
+     
+    }
+  
+    .card {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  
+  /* Extra small screens */
+  @media (max-width: 480px) {
+    .signup-image img {
+      /* max-width: 100%; */
+      display: none;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  
+    .btn-primary {
+      width: 100%;
+    }
+  }
+  
+
+.card-body{
+    box-shadow: 0 0 50px rgba(2, 2, 2, 0.689);
+    border: 1px solid #ddd;
+}
+
+.wrapper{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.empty{
+    height: 100vh;
+    width: 100%;
+}
+
+#carouselExample{
+    margin-top: 80px;
+    height: 60vh;
+}
+
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+.carousel-caption p{
+    font-size: 40px;
+    background-color: rgba(62, 60, 60, 0.241);
+}
+
+.carousel-caption .btn-primary{
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        background-color: rgba(62, 60, 60, 0.241); 
+    }
+    .carousel-caption p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .carousel-caption .btn-primary {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+.centered-heading {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: 100%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 2rem;
+    text-align: center; 
+}
+
+/* for animation of images */
+.image-container {
+    overflow: hidden; 
+    position: relative; 
+}
+
+.image-container img {
+    transition: transform 0.3s ease; 
+    display: block;
+    width: 100%; 
+}
+
+.image-container:hover img {
+    transform: translateY(-10px); 
+}
+
+.wrapper {
+    position: relative; 
+    background: url('pictures/bridge.jpeg') no-repeat center center; 
+    background-size: cover;
+    overflow: hidden; 
+}
+
+.wrapper::before {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background-color: rgba(131, 80, 204, 0.5);
+    z-index: 1; 
+}
+
+.wrapper > * {
+    position: relative; 
+    z-index: 2; 
+}
+
+.wrapper h2{
+    color: white;
+    font-weight: 700;
+}
+
+.footer{
+    background-color: rgb(33, 5, 63);
+    color: white;
+}
+
+.footer .footer-list li{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+
+.point{
+    cursor: pointer;
+}
+
+/* Lightbox Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+  
+.modal-content {
+    display: block;
+    margin: auto;
+    inset: 0;
+    max-width: 50%;
+    max-height: 80vh;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+}
+  
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+}
+  
+.close:hover {
+    color: #ccc;
+}
+  
+  
